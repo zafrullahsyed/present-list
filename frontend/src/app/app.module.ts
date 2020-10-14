@@ -11,13 +11,17 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
