@@ -11,13 +11,18 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './user-related/login/login.component';
+import { RegistrationComponent } from './user-related/registration/registration.component';
+import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,8 @@ import { HeaderComponent } from './header/header.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,16 +3,16 @@
     <div class="navbar-header">
       <a href="#" class="navbar-brand">Präsenzliste/ Presence list</a>
     </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Example</a> </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="btn btn-primary"> Login </li>
-        <li> </li>
-        <li class="btn btn-primary"> Register </li>
-      </ul>
+
+    <div class="button-row almost-full-width" role="group">
+      <button mat-raised-button color="primary" id="loginButton"
+              (click)="openLoginDialog()">Refresh
+      </button>
+      <button mat-raised-button color="primary" id="newRegistrationButton"
+              (click)="openRegistrationDialog()"> Register
+      </button>
     </div>
+
   </div>
 </nav>
 
